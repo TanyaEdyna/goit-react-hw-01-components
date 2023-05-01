@@ -1,5 +1,10 @@
+import { Profile } from "./Profile/Profile"
+import { Statistics } from "./Statistics/Statistics"
+// import user from "../components/Data"
+
 export const App = () => {
   return (
+    
     <div
       style={{
         height: '100vh',
@@ -10,7 +15,7 @@ export const App = () => {
         color: '#010101'
       }}
     >
-      React homework template
+      <Profile userData={user}/>
     </div>
   );
 };
