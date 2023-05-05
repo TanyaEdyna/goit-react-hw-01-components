@@ -5,31 +5,31 @@ import PropTypes from 'prop-types';
 const Profile = ({ userData }) => {
     const { username, tag, location, avatar, stats: { followers, views, likes } } = userData;  
 return (  
-<div className = "profile">
-  <div className="description">
+<div class = "profile">
+  <div class="description">
     <img
       src={avatar}
       alt={username}
       
-      className="avatar"
+      class="avatar"
     />
-    <p className="name">{username}</p>
-    <p className="tag">{tag}</p>
-    <p className="location">{location}</p>
+    <p class="name">{username}</p>
+    <p class="tag">{tag}</p>
+    <p class="location">{location}</p>
   </div>
 
-  <ul className="stats">
+  <ul class="stats">
     <li>
-      <span className="label">Followers: </span>
-      <span className="quantity">{followers}</span>
+      <span class="label">Followers: </span>
+      <span class="quantity">{followers}</span>
     </li>
     <li>
-      <span className="label">Views: </span>
-      <span className="quantity">{views}</span>
+      <span class="label">Views: </span>
+      <span class="quantity">{views}</span>
     </li>
     <li>
-      <span className="label">Likes: </span>
-      <span className="quantity">{likes}</span>
+      <span class="label">Likes: </span>
+      <span class="quantity">{likes}</span>
     </li>
   </ul>
 </div>)
@@ -37,7 +37,7 @@ return (
 }
 
 Profile.propTypes = {
-  userData: PropTypes.shape({//PropTypes.shape задає формат об'єкта, що містить набір властивостей з певними типами і значеннями
+  userData: PropTypes.shape({
     username: PropTypes.string.isRequired,
     tag: PropTypes.string.isRequired,
     location: PropTypes.string.isRequired,
